@@ -21,8 +21,15 @@ Welcome to the **FTP Scanner**, a tool designed for cybersecurity professionals 
 
 Make sure you have Python 3.8+ installed. You'll also need to install the required dependencies:
 ## Setup
+```sh
+git clone https://github.com/MIISTERC/ftp-scan.git
+cd ftp-scan
+sudo bash script.sh
+```
 You can use the automated setup file `setup.sh` or you can do it manually..
 ```sh
+git clone https://github.com/MIISTERC/ftp-scan.git
+cd ftp-scan
 pip3 install -r requirements.txt
 sudo ln -s /usr/bin/ftpscan <path>/ftp-scan/ftpscan.py
 ftpscan -h
@@ -38,6 +45,7 @@ ftpscan -t 127.0.0.1 -p 1234
 ```
 ## Warning
 1.Make sure the shebang in `ftpscan.py` matches your actual python3 path if it does , then you are good to go :)
+<br>
 2.After running setup.sh , please don't move the script to another location as it deflects the symbolic link and as well as the script cant open the `.db` file.
 ## output
 Example output
