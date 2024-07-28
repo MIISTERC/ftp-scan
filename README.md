@@ -31,7 +31,7 @@ You can use the automated setup file `setup.sh` or you can do it manually..
 git clone https://github.com/MIISTERC/ftp-scan.git
 cd ftp-scan
 pip3 install -r requirements.txt
-sudo ln -s /usr/bin/ftpscan <path>/ftp-scan/ftpscan.py
+sudo ln -s <path>/ftp-scan/ftpscan.py /usr/bin/ftpscan
 ftpscan -h
 ```
 or you can just use it by
