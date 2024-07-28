@@ -12,11 +12,13 @@ parser.add_argument('-p','--port',required=False,default=21,help="Enter target p
 args = parser.parse_args()
 target = args.target
 port = args.port
+port = int(port)
 class scanner:
     def __init__(self,ip,port):
         self.ip = ip
         self.port = port
-        self.ftp = ftplib.FTP()
+        timeout_value = 4
+        self.ftp = ftplib.FTP(timeout=timeout_value)
     def connect(self):
         try:
             self.ftp.connect(self.ip,self.port)
