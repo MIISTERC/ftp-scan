@@ -1,5 +1,41 @@
-# ftp-scan
-## FTP Vulnerability Scanner Tool
-![Screenshot from 2024-07-28 19-53-06](https://github.com/user-attachments/assets/dca3aa65-8ed7-4513-b8a0-bebbf49e0202)
-<br>
-This tool is a versatile and efficient FTP vulnerability scanner designed to identify potential security flaws in FTP servers. By leveraging a database of known exploits, the tool matches the server's banner information against known vulnerabilities, helping security professionals and system administrators ensure the robustness of their FTP services.
+# FTP Scanner for Pentesting and CTFs
+![Screenshot from 2024-07-28 19-53-06](https://github.com/user-attachments/assets/eb855e92-71a9-49fe-a3f2-009d52610df8)
+
+![Python](https://img.shields.io/badge/python-v3.8%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-linux--64%20%7C%20windows--64-lightgrey)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+
+## Overview
+
+Welcome to the **FTP Scanner**, a tool designed for cybersecurity professionals and enthusiasts involved in Capture the Flag (CTF) competitions and pentesting activities. This script helps you identify anonymous FTP logins, lists files, grabs banners, and checks for known vulnerabilities against a database.
+
+## Features
+
+- **Anonymous Login Detection**: Checks if an FTP server allows anonymous logins.
+- **File Listing**: Lists all files available in the FTP directory.
+- **Banner Grabbing**: Extracts the FTP server banner.
+- **Vulnerability Scanning**: Compares the extracted banner against a local database of known vulnerabilities.
+
+## Prerequisites
+
+Make sure you have Python 3.8+ installed. You'll also need to install the required dependencies:
+## Setup
+You can use the automated setup file `setup.sh` or you can do it manually..
+```sh
+pip3 install -r requirements.txt
+sudo ln -s /usr/bin/ftpscan <path>/ftp-scan/ftpscan.py
+ftpscan -h
+```
+or you can just use it by
+```sh
+python3 ftpscan.py -h
+```
+## Usage
+```sh
+ftpscan -t 127.0.0.1 (default port is 21)
+ftpscan -t 127.0.0.1 -p 1234
+```
+## output
+Example output
+
