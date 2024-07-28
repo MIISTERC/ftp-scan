@@ -46,7 +46,7 @@ ftpscan -t 127.0.0.1 -p 1234
 ## Warning
 1.Make sure the shebang in `ftpscan.py` matches your actual python3 path if it does , then you are good to go :)
 <br>
-2.After running setup.sh , please don't move the script to another location as it deflects the symbolic link and as well as the script cant open the `.db` file.
+2.After running setup.sh , please don't move the script to another location as it deflects the symbolic link and as well as the script cant open the `.db` file. instead after cloning leave the `ftp-scan` directory as it is.
 ## output
 Example output
 <br>
