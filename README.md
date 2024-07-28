@@ -36,6 +36,8 @@ python3 ftpscan.py -h
 ftpscan -t 127.0.0.1 (default port is 21)
 ftpscan -t 127.0.0.1 -p 1234
 ```
+## shebang in ftpscan.py
+Make sure the shebang in `ftpscan.py` matches your actual python3 path if it does , then you are good to go :)
 ## output
 Example output
 <br>
