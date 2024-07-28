@@ -24,7 +24,7 @@ Make sure you have Python 3.8+ installed. You'll also need to install the requir
 ```sh
 git clone https://github.com/MIISTERC/ftp-scan.git
 cd ftp-scan
-sudo bash script.sh
+sudo bash setup.sh
 ```
 You can use the automated setup file `setup.sh` or you can do it manually..
 ```sh
