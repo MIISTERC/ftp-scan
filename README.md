@@ -38,4 +38,6 @@ ftpscan -t 127.0.0.1 -p 1234
 ```
 ## output
 Example output
+<br>
+![output](https://github.com/user-attachments/assets/f46cd135-b17e-4bd1-a350-07214efd6291)
 
