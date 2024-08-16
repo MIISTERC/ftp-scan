@@ -91,7 +91,7 @@ class VulnScan():
                 print("[+] No exploits found in DB file..")
                 
         except FileNotFoundError:
-            print("[-] Failed to open the ftp-exploit-db file.")
+            print("[-] Failed to open the ftp-vuln.db file.")
         except Exception as e:
             print(f"[-] Error: {e}")
 
